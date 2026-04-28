@@ -104,7 +104,6 @@ Wklejanie przez schowek jest dużo szybsze niż wpisywanie znak po znaku i radzi
 ## Możliwe rozszerzenia
 
 - Pobieranie danych bezpośrednio z bazy MySQL/PostgreSQL/SQLite
-- Wpisywanie do wiersza zamiast kolumny (Tab zamiast Enter)
 - Interfejs graficzny (tkinter / PyQt)
 - Wybór konkretnego zakresu wartości do wpisania
 
