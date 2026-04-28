@@ -16,9 +16,28 @@ while True:
     numer = int(input("\nWybierz numer pliku: "))
     userinput = file_txt[numer - 1]  
 
+   
+    print("\nMożliwe separatory:")
+    print("  , - przecinek")
+    print("  ; - średnik")
+    print("  | - pionowa kreska")
+    print("  tab - tabulator")
+    print("  enter - nowa linia")
+    input_t = input("Wybierz separator: ")
 
+    
+    if input_t.lower() == 'tab':
+        separator = '\t'
+    elif input_t.lower() == 'enter':
+        separator = '\n'
+    else:
+        separator = input_t
+
+    
+    
     with open(userinput, 'r') as f:
-        strings = f.read().split(',')
+        strings = f.read().split(separator)
+        
     print(strings) 
 
     print("\n Kliknij na 1 atrybut kolumny i kliknij f1 żeby zacząć wpisywać dane")
@@ -37,7 +56,7 @@ while True:
 
     print("Wszystkie dane z pliku wpisane w excelu")
 
-   
+
 
 
     
