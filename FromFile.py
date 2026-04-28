@@ -39,7 +39,13 @@ while True:
         strings = f.read().split(separator)
         
     print(strings) 
-
+    
+    input_rc =input("\nChcesz wpisać kolumny = k ,czy wiersze = w: ")
+    if input_rc.lower() == 'k':
+        rc = 'enter'
+    elif input_rc.lower() == 'w':
+        rc = 'tab'
+    
     print("\n Kliknij na 1 atrybut kolumny i kliknij f1 żeby zacząć wpisywać dane")
     keyboard.wait('f1')
 
@@ -51,7 +57,7 @@ while True:
         time.sleep(0.1)           
         keyboard.press_and_release('ctrl+v')
         time.sleep(0.05)
-        keyboard.press_and_release('enter')
+        keyboard.press_and_release(f'{rc}')
         time.sleep(0.05)
 
     print("Wszystkie dane z pliku wpisane w excelu")
