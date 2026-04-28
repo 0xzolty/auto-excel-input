@@ -103,7 +103,6 @@ Wklejanie przez schowek jest dużo szybsze niż wpisywanie znak po znaku i radzi
 
 ## Możliwe rozszerzenia
 
-- Wsparcie dla innych separatorów (średnik, tabulator, nowa linia)
 - Pobieranie danych bezpośrednio z bazy MySQL/PostgreSQL/SQLite
 - Wpisywanie do wiersza zamiast kolumny (Tab zamiast Enter)
 - Interfejs graficzny (tkinter / PyQt)
