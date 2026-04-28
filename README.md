@@ -22,8 +22,8 @@ Prosty program w Pythonie, który automatycznie wpisuje dane z pliku `.txt` do k
 Sklonuj repozytorium:
 
 ```bash
-git clone https://github.com/twoj-username/excel-typer.git
-cd excel-typer
+git clone https://github.com/0xzolty/auto-excel-input.git
+cd auto-excel-input
 ```
 
 Zainstaluj wymagane biblioteki:
@@ -45,14 +45,14 @@ pip install keyboard pyperclip
 3. Uruchom program **jako administrator**:
 
    ```bash
-   python pyth.py
+   python FromFile.py
    ```
 
 4. Wybierz numer pliku z listy.
 
 5. Przełącz się do Excela i kliknij na komórkę, od której chcesz zacząć wpisywanie.
 
-6. Wciśnij **F1** — program zacznie wklejać wartości po kolei, schodząc w dół po kolumnie.
+6. Wciśnij **F1** - program zacznie wklejać wartości po kolei, schodząc w dół po kolumnie.
 
 7. Po zakończeniu wybierz `n` aby uruchomić ponownie z innym plikiem lub `q` aby zakończyć.
 
@@ -80,7 +80,7 @@ Aby utworzyć samodzielny plik wykonywalny (bez konieczności posiadania zainsta
 
 ```bash
 pip install pyinstaller
-pyinstaller --onefile --uac-admin pyth.py
+pyinstaller --onefile --uac-admin FromFile.py
 ```
 
 Gotowy plik `.exe` znajdziesz w folderze `dist/`. Flaga `--uac-admin` automatycznie żąda uprawnień administratora przy uruchomieniu.
@@ -89,8 +89,8 @@ Gotowy plik `.exe` znajdziesz w folderze `dist/`. Flaga `--uac-admin` automatycz
 
 Program używa dwóch bibliotek do automatyzacji:
 
-- **`pyperclip`** — kopiuje aktualną wartość do schowka systemowego
-- **`keyboard`** — symuluje skróty klawiaturowe (`Ctrl+V` żeby wkleić, `Enter` żeby zatwierdzić i przejść do następnej komórki)
+- **`pyperclip`** - kopiuje aktualną wartość do schowka systemowego
+- **`keyboard`** - symuluje skróty klawiaturowe (`Ctrl+V` żeby wkleić, `Enter` żeby zatwierdzić i przejść do następnej komórki)
 
 Wklejanie przez schowek jest dużo szybsze niż wpisywanie znak po znaku i radzi sobie z polskimi znakami oraz znakami specjalnymi.
 
@@ -111,8 +111,8 @@ Wklejanie przez schowek jest dużo szybsze niż wpisywanie znak po znaku i radzi
 
 ## Licencja
 
-MIT — można używać i modyfikować dowolnie.
+MIT - można używać i modyfikować dowolnie.
 
 ## Autor
 
-Stworzone na własny użytek do automatyzacji wpisywania danych do Excela.
+[0xzolty](https://github.com/0xzolty)
