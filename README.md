@@ -1,6 +1,6 @@
 # Excel Typer
 
-Prosty program w Pythonie, który automatycznie wpisuje dane z pliku `.txt` do kolumny w Excelu (lub dowolnej innej aplikacji obsługującej wklejanie). Kopiuje wartości oddzielone przecinkami i wkleja je po kolei, schodząc w dół po kolumnie.
+Prosty program w Pythonie, który automatycznie wpisuje dane z pliku `.txt` do kolumny w Excelu 
 
 ## Funkcje
 
